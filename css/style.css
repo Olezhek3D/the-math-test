@@ -1,0 +1,207 @@
+*{
+    font-family: "EB Garamond", serif;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg, #89f7fe, #66a6ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10 s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+#myOL{
+    font-size: 20px;
+}
+
+#myOL li{
+    margin: 20px
+}
+#one {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#one li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#one li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+.divBtn{
+    display: flex;
+    justify-content: center;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#myBtn {
+    font-size: 40px;
+    padding: 20px 4px;
+    background-color: #4CAF50; /* Зелёный фон */
+    color: white; /* Белый текст */
+    border: none; /* Убрать рамку */
+    border-radius: 8px; /* Закруглённые углы */
+    transition: background-color 0.3s; /* Эффект при наведении */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+
+    border: 2px solid #ffffff; /* Белая обводка */
+    background: linear-gradient(to right, #4CAF50, #3e8e41); /* Градиент фона */
+
+    cursor: pointer;
+
+    
+    animation: pulse 2s infinite;
+}
+#myBtn:hover {
+    background-color: #45a049; /* Более тёмный зелёный при наведении */
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Более яркая тень при наведении */
+
+
+}
+#myBtn:active {
+    transform: scale(0.95); /* Лёгкое уменьшение при нажатии */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшение тени */
+}
+
+.fraction {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8em;
+}
+.fraction .numerator {
+    display: block;
+}
+.fraction .denominator {
+    display: block;
+    border-top: 1px solid black;
+}
+
+#two {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#two li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#two li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#three {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#three li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#three li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#four {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#four li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#four li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#five {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#five li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#five li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#six {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#six li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#six li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#seven {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#seven li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#seven li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#eight {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#eight li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#eight li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#nine {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#nine li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#nine li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+#ten {
+    list-style-type: none; /* Убираем стандартную нумерацию */
+    counter-reset: list-counter; /* Сбрасываем счётчик */
+}
+#ten li{
+    counter-increment: list-counter; /* Увеличиваем счётчик для каждого элемента */
+}
+#ten li::before {
+    content: counter(list-counter, lower-alpha) ") "; /* Генерируем букву + закрывающая скобка */
+}
+input[type="checkbox"] {
+    appearance: none; /* Убираем стандартный вид чекбокса */
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Делаем круглую кнопку */
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #66a6ff; /* Цвет при выборе */
+    border-color: #89f7fe
+}
